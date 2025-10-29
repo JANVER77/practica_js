@@ -35,10 +35,10 @@ console.log("El pais que escribiste fue :", country);
 //3. Condicional If
 
     // Ejercicio 1:
-    let edad3 = parseInt(input("Ingrese su edad :\n"));
+    let edad3 = parseInt(input("Ingrese su edad :"));
     if (edad3 >= 18) {
         console.log("Puedes entrar");}
-    else if (0 > edad3 >= 18) {
+    else if (0 > edad3 <= 18) {
         console.log("No puedes entrar");
     }
     else{
@@ -47,9 +47,9 @@ console.log("El pais que escribiste fue :", country);
     
     // Ejercicio 2:
     let num3 = parseInt(input("Ingrese un numero"));
-    if (num > 0){
+    if (num3 > 0){
         console.log("Es positivo");
-    }else if(num < 0){
+    }else if(num3 < 0){
         console.log("Es negatvio");
     }
     else{
@@ -61,8 +61,8 @@ console.log("El pais que escribiste fue :", country);
 
     //Ejercicio 1:
     let num4 = parseInt(input("Ingrese un numero"));
-    let cont = 0;
-    while (cont > num4){
+    let cont = 1;
+    while (cont <= num4){
         console.log(cont);
         cont++;
     }
@@ -70,10 +70,16 @@ console.log("El pais que escribiste fue :", country);
     //Ejercicio 2:
     let pass = "1234";
     let inPass = "";
-    while (inPass === pass){
-        inPass = input("Ingrese su contraseña :\n");
+    while (inPass != pass){
+        inPass = input("Ingrese su contraseña :");
     }
 
 //5. Bucle for
     // Ejercicio 1:
-    
+    for (let i = 0; i <= 10; i++){
+        console.log(i);
+    }
+    let num5 = parseInt(input("ingrese un numero"));
+    for (let i = 0;i <=10; i++){
+        console.log(num5, " x ", i ," = ", num5*i);
+    }
